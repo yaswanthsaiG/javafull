@@ -9,30 +9,30 @@ import java.util.function.Predicate;
     public class TicketBookingTest {
         public static void main(String[] args){
             Ticket ticket = new Ticket();
-            ticket.seatNum="01";
+            ticket.seatNo=01;
             ticket.status="Successful";
-            ticket.ticketNUm ="01";
+            ticket.ticketNo ="01";
 
 
             Ticket ticket1 = new Ticket();
-            ticket1.seatNum="02";
+            ticket1.seatNo=02;
             ticket1.status="FAILED";
-            ticket1.ticketNUm ="02";
+            ticket1.ticketNo ="02";
 
             Ticket ticket2 = new Ticket();
-            ticket2.seatNum="03";
+            ticket2.seatNo=03;
             ticket2.status="Blocked";
-            ticket2.ticketNUm="03";
+            ticket2.ticketNo="03";
 
             Ticket ticket3 = new Ticket();
-            ticket3.seatNum="04";
+            ticket3.seatNo=04;
             ticket3.status="Successful";
-            ticket3.ticketNUm="04";
+            ticket3.ticketNo="04";
 
             Ticket ticket4 = new Ticket();
-            ticket4.seatNum="05";
+            ticket4.seatNo=05;
             ticket4.status="Blocked";
-            ticket4.ticketNUm="05";
+            ticket4.ticketNo="05";
 
             List<Ticket> ticketList = new ArrayList<>();
             ticketList.add(ticket);
@@ -47,7 +47,7 @@ import java.util.function.Predicate;
             for (;iteratorFailed.hasNext();){
                 Ticket ticket5 = iteratorFailed.next();
                 if (ticket5.status.equals("FAILED")){
-                    System.out.println("Failed tickets seat number "+ticket5.seatNum);
+                    System.out.println("Failed tickets seat Nober "+ticket5.seatNo);
                 }
             }
 
@@ -55,7 +55,7 @@ import java.util.function.Predicate;
             for (;iteratorSuccessful.hasNext();){
                 Ticket ticket5 = iteratorSuccessful.next();
                 if (ticket5.status.equals("Successful")){
-                    System.out.println("Successful tickets seat number "+ticket5.seatNum);
+                    System.out.println("Successful tickets seat Nober "+ticket5.seatNo);
                 }
             }
 
@@ -63,7 +63,7 @@ import java.util.function.Predicate;
             for (;iteratorBlocked.hasNext();){
                 Ticket ticket5 = iteratorBlocked.next();
                 if (ticket5.status.equals("Blocked")){
-                    System.out.println(" Blocked seats "+ticket5.seatNum);
+                    System.out.println(" Blocked seats "+ticket5.seatNo);
                 }
             }
 
