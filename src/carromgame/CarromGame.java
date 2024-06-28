@@ -1,4 +1,4 @@
-package carromsgame;
+package carromgame;
 
 
     import java.util.Scanner;

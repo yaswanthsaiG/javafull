@@ -1,4 +1,4 @@
-package carromsgame;
+package carromgame;
 
 public class CarromCoin {
 
